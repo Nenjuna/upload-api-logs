@@ -1,0 +1,7 @@
+{
+  "mailfetching": [
+    "com.adventnet.servicedesk.common.MailUtilities",
+    "Exception",
+    "Caused by:"
+  ]
+}

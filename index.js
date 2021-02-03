@@ -107,4 +107,4 @@ app.get("/readLogFromExtracted", async (req, res) => {
 });
 
 // Starting the express server
-app.listen(PORT, () => console.log(`Express Running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Express is running on Port:  ${PORT}`));

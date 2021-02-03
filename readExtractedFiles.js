@@ -7,6 +7,7 @@
 //Importing required modules to read file directory and to read files
 const lineByLine = require("n-readlines");
 const fsp = require("fs").promises;
+const tracesJson = require("./traces.json");
 
 var asyncres = [];
 var FinalResults = [];
@@ -127,6 +128,17 @@ function loopTraces(it, consolidatedLogs) {
   return finalres;
 }
 
+function loopLogTraces(logArray, traceCount) {
+  console.log(traceCount);
+  console.log(logArray.length);
+  if (traceCount === 0) return logArray;
+  let filterd = logArray.filter((elment) =>
+    elment.includes(tracesJson["mailfetching"][traceCount])
+  );
+  let count = traceCount - 1;
+  return loopLogTraces(filterd, count);
+}
+
 async function lazyFiles(logarray) {
   let readvalue = [];
   let logFileArray = logarray;
@@ -158,9 +170,11 @@ async function lazyloadFiles(logpaths) {
 
   let FinalRes = await lazyFiles(logFileArray);
 
+  let results = loopLogTraces(FinalRes, tracesJson["mailfetching"].length - 1);
+
   //Final results where the consolidated array of traces are stored
   //   FinalResults = FinalResults.concat(readvalue);
-  return FinalRes;
+  return results;
 }
 
 async function readAllFiles(uid, issueType) {
@@ -183,7 +197,7 @@ async function readAllFiles(uid, issueType) {
   );
 
   //   var res = loopTraces("mailfetching", FinalResults);
-  var res = classCaused2;
+  var res = itchunk;
   //   console.log(chunks.length);
   // return res.slice(0, 5);
   return res;

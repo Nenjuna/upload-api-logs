@@ -1,0 +1,16 @@
+<html><head><title>FailedQuery.html</title></head><body><center><h2>Failed Queries</h2></center>
+<table border ='1'>
+<tr><th>
+Report ID</th><th>Report Title</th><th>Portal Name</th><th>Old Query</th><th>Updated Query</th><th>Helpdesk Query</th><th>Time</th></tr>
+<tr>
+<td>146</td>
+<td>Open Problem by Incident Counts</td>
+<td>IT Helpdesk</td>
+<td>SELECT max(Problem.PROBLEMID) as "Problem ID", max(Problem.TITLE) as "Title" , count(*)  as "Incident's Count" from PROBLEM INNER JOIN  ProblemToIncidentMapping on ProblemToIncidentMapping.PROBLEMID = Problem.PROBLEMID LEFT JOIN StatusDefinition on StatusDefinition.STATUSID = Problem.STATUSID where StatusDefinition.STATUSNAME='Open' GROUP BY Problem.PROBLEMID</td>
+<td>null</td>
+<td>null</td>
+<td>2020-11-26 19:28:14</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,135 @@
+var gzip = require("gunzip-file");
+
+const express = require("express");
+
+const port = process.env.PORT || 3333;
+
+const app = express();
+
+// gzip(
+//   "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip.gz",
+//   "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip",
+//   () => {
+//     console.log("gunzip done");
+//   }
+// );
+
+const fs = require("fs");
+
+const StreamZip = require("node-stream-zip");
+
+var text;
+
+function readBuffers() {
+  var sp;
+
+  return new Promise((resolve, reject) => {
+    const zip = new StreamZip({
+      file: "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip",
+      storeEntries: true,
+      skipEntryNameValidation: true,
+    });
+
+    zip.on("error", (err) => {
+      console.log(err);
+    });
+
+    zip.on("ready", () => {
+      console.log("Entries read: " + zip.entriesCount);
+      for (const entry of Object.values(zip.entries())) {
+        const desc = entry.isDirectory ? "directory" : `${entry.size} bytes`;
+        // console.log(`Entry ${entry.name}: ${desc}`);
+      }
+
+      const data = zip.entryDataSync(
+        "D:\\ManageEngine\\ServiceDesk\\logs\\serverout1.txt"
+      );
+      text = Buffer.from(data, "utf8").toString();
+
+      sp = text.split("\r");
+
+      console.log(sp.length);
+      // Do not forget to close the file once you're done
+      zip.close();
+    });
+    // console.log(sp.length);
+    // return sp.length;
+
+    if (sp != undefined) {
+      resolve();
+    } else {
+      reject("Error: Something went wrong");
+    }
+  });
+}
+
+app.get("/getstring", async (req, res) => {
+  let results = await readBuffers();
+  // console.log(readBuffers);
+  res.json({ success: results });
+});
+
+app.listen(port, () => console.log(`running on port ${port}`));
+
+
+
+_______________________________________________
+
+// var gzip = require("gunzip-file");
+
+// async function deflateGunZip() {
+//   return new Promise((resolve, reject) => {
+//     gzip(
+//       "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip.gz",
+//       "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip",
+//       () => {
+//         resolve("deflation completed");
+//       }
+//     );
+//     // reject("Oops something went wrong");
+//   });
+// }
+
+// const fs = require("fs");
+// const zlib = require("zlib");
+
+// const directoryFiles = fs.readdirSync("./uploads");
+
+// Promise.all(
+//   directoryFiles.map((filename) => {
+//     return new Promise((resolve, reject) => {
+//       const fileContents = fs.createReadStream(`./uploads/${filename}`);
+//       const writeStream = fs.createWriteStream(
+//         `./uploads/${filename.slice(0, -3)}`
+//       );
+//       console.log(writeStream);
+//       const unzip = zlib.createGunzip();
+//       fileContents
+//         .pipe(unzip)
+//         .pipe(writeStream)
+//         .on("finish", (err) => {
+//           if (err) return reject(err);
+//           else resolve();
+//         });
+//     });
+//   })
+// ).then(console.log("done"));
+
+// module.exports = deflateGunZip;
+
+const AdmZip = require("adm-zip");
+const fs = require("fs");
+
+const fileContents = fs.createReadStream(
+  "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip.gz"
+);
+console.log(fileContents);
+const archive = new AdmZip(
+  "./uploads/Feb_1_2021_15_58_43_sd_11135_logs.zip.gz"
+);
+
+archive.getEntries();
+
+// const file1 = archive.getEntry("Feb_1_2021_15_58_43_sd_11135_logs.zip");
+// const data = file1.getData();
+

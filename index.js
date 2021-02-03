@@ -1,26 +1,35 @@
+/**
+ * Function was broken down in such a way that it can be imported to other files and can be reused
+ * Author: Not Found :P
+ * Git/Nenjuna
+ */
+
+//Importing required modules here
+
 const express = require("express");
-
 const multer = require("multer");
-
 const fs = require("fs");
+const handler = require("express-async-handler");
 
-const tracesJson = require("./traces.json");
+const readBuf = require("./readBuffer"); //To load files without extracting or from the ZIP (NOT GUNZIP)
+const readLogFiles = require("./readExtractedFiles"); //To read files which were extracted already and allows reading via Byte array
 
-const fsp = require("fs").promises;
-
-const lineByLine = require("n-readlines");
-
-const port = process.env.PORT || 3344;
+/**
+ * Configuring the port and instantiating required modules and files
+ * Custom files and functinos are already loaded above
+ */
+const PORT = process.env.PORT || 3344;
 
 const app = express();
 
-const handler = require("express-async-handler");
+const tracesJson = require("./traces.json");
 
-var asyncres = [];
-var FinalResults = [];
-var lines = [];
-
-console.log(tracesJson["mailfetching"]);
+/**
+ * Multer is a node.js middleware for handling multipart/form-data, which is primarily used for uploading files. It is written on top of busboy for maximum efficiency.
+ * NOTE: Multer will not process any form which is not multipart (multipart/form-data).
+ * In the below function we are taking in the req object and using a callback we are writing the file to the storage and returning
+ * the list of files with their path informaiton.
+ */
 
 let storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -39,145 +48,22 @@ let storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage });
+const upload = multer({ storage }); // Multer storage class ends
 
-async function nreadline(filePath) {
-  let logs = [];
-  let res = [];
-  try {
-    let rl = new lineByLine(filePath);
-    let line;
-    let result = [];
-    while ((line = rl.next())) {
-      logs.push(line.toString("utf8"));
-    }
-    result = logs;
-    let slide = 0;
-    result.forEach((i) => {
-      if (!i.startsWith("[") || i.includes("[SYSERR]")) {
-        res[slide - 1] = res[slide - 1] + i;
-      } else {
-        res[slide] = i;
-        slide++;
-      }
-    });
-  } catch (err) {
-    console.log(err);
-  }
-  return res.reverse();
-}
+/**
+ * API end points for communication from the frontend are defined below
+ * It is where the actual functions are called from other files/modules
+ * The fucntion execution happens in real time SYNCHRONOUSLY. Need to load only necessary files as overloading may cause the server to crash
+ */
 
-//Finding the cause inside the filtered log traces
-function causedBy(FLT) {
-  let filteredLogTracess = FLT;
+//API endpoint for single file upload. Used to upload Support files
 
-  const causedBy = filteredLogTracess.filter((trace) => {
-    let causedNotFound = true;
-    // if (trace.includes("Caused by:")) {
-    while (causedNotFound && trace.includes("Caused by:")) {
-      var trs = trace.split("\r");
-      for (let i = 0; i < trs.length; i++) {
-        let tr = trs[i];
-        let elem = [];
-        if (tr.includes("Caused by:")) {
-          elem.push(trs[0]);
-          elem.push(trs[1]);
-          elem.push(tr);
-          elem = elem.concat(trs[i + 1]);
-          elem = elem.concat(trs[i + 2]);
-          trav.push(elem.join().replace(`,`, ""));
-          causedNotFound = false;
-          break;
-        }
-      }
-    }
-  });
-  console.log(causedBy);
-  return causedBy;
-}
-
-function linearSearchLogs(obj, searchQuery) {
-  let filteredLogTracess = obj;
-  let sq = searchQuery;
-  const linearResults = filteredLogTracess.filter((cause) =>
-    cause.includes(sq)
-  );
-
-  return linearResults;
-}
-
-async function readAllFiles(uid, issueType) {
-  let ticket = uid;
-
-  let it = issueType;
-
-  let traverseFile = "./uploads/" + ticket;
-
-  async function trFolder() {
-    try {
-      return fsp.readdir(traverseFile);
-    } catch (error) {
-      console.error("Error occured while scanning the file", error);
-    }
-  }
-
-  let logfiles = await trFolder();
-
-  let logFileArray = logfiles;
-
-  let readvalue = [];
-  await logFileArray.forEach(async (log) => {
-    let logPath = "./uploads/" + ticket + "/" + log;
-    if (logPath.includes("serverout")) {
-      asyncres = await nreadline(logPath);
-      readvalue = readvalue.concat(asyncres);
-    }
-  });
-
-  //Final results where the consolidated array of traces are stored
-  FinalResults = FinalResults.concat(readvalue);
-
-  //   console.log("inside readfile");
-
-  //  const classCaused2 = FinalResults.filter(cause => cause.includes('com.adventnet.authentication.callback.LoginCallbackHandler'))
-
-  function loopTraces(it, consolidatedLogs) {
-    let finalLogs = consolidatedLogs;
-    // console.log("inside loop traces");
-    // let it = issueType;
-
-    let finalres = [];
-
-    const exList = tracesJson[it];
-
-    exList.forEach((ex) => {
-      //   console.log(ex.includes("Caused by:"));
-      if (!ex.includes("Caused by:") && finalres.length == 0) {
-        finalres = finalres.concat(linearSearchLogs(finalLogs, ex));
-        console.log(finalres.length);
-      } else if (finalres.length > 0 && !ex.includes("Caused by:")) {
-        finalres = linearSearchLogs(finalres, ex);
-      } else {
-        finalres = causedBy(finalres);
-      }
-    });
-
-    return finalres;
-  }
-
-  var res = loopTraces("mailfetching", FinalResults);
-
-  return res.slice(0, 5);
-}
-
-// Express APIs defined below
-
-//API for a single file upload button
 app.post("/upload", upload.single("file"), (req, res) => {
   res.json({ status: "success", file: req.file });
 });
 
-//API for multiple form upload
+//API endpoint for uploading multiple files. Used to upload extracted files and folder
+
 app.post("/multiple", upload.array("files"), (req, res) => {
   try {
     res.json({ status: "success", files: req.files });
@@ -205,5 +91,20 @@ app.get(
   })
 );
 
+app.get("/readbuffer", (req, res) => {
+  readBuf()
+    .then((results) => {
+      res.json({ success: results });
+    })
+    .catch((err) => {
+      res.json({ oops: "some error" });
+    });
+});
+
+app.get("/readLogFromExtracted", async (req, res) => {
+  let answer = await readLogFiles("hello", "there");
+  res.json({ success: answer });
+});
+
 // Starting the express server
-app.listen(port, () => console.log("running on 3344 port"));
+app.listen(PORT, () => console.log(`Express Running on port ${PORT}`));

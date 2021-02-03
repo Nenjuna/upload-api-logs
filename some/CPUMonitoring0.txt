@@ -1,0 +1,244 @@
+[14:07:14:622]|[06-02-2020]|[CPUMonitoring]|[SEVERE]|[132]: Total No. of Threads:  128|
+[14:07:14:624]|[06-02-2020]|[CPUMonitoring]|[SEVERE]|[132]: 
+Thread Info:Thread Id : 134, has CPU usage : 1
+Thread Name: ServiceDeskCommon_4, Thread State: WAITING
+  at sun.misc.Unsafe.park(Native Method)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  at java.lang.Thread.run(Thread.java:748)
+Is executing native code? : false
+|
+[14:07:14:625]|[06-02-2020]|[CPUMonitoring]|[SEVERE]|[132]: Remaining Threads cpu usage is 0|
+[08:39:49:087]|[06-16-2020]|[CPUMonitoring]|[SEVERE]|[129]: Total No. of Threads:  130|
+[08:39:49:088]|[06-16-2020]|[CPUMonitoring]|[SEVERE]|[129]: 
+Thread Info:Thread Id : 136, has CPU usage : 1
+Thread Name: ServiceDeskCommon_4, Thread State: WAITING
+  at sun.misc.Unsafe.park(Native Method)
+  at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+  at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  at java.lang.Thread.run(Thread.java:748)
+Is executing native code? : false
+|
+[08:39:49:088]|[06-16-2020]|[CPUMonitoring]|[SEVERE]|[129]: Remaining Threads cpu usage is 0|
+[09:07:54:091]|[06-18-2020]|[CPUMonitoring]|[SEVERE]|[126]: Total No. of Threads:  132|
+[09:07:54:091]|[06-18-2020]|[CPUMonitoring]|[SEVERE]|[126]: Remaining Threads cpu usage is 0|
+[00:02:17:504]|[07-06-2020]|[CPUMonitoring]|[SEVERE]|[132]: Total No. of Threads:  138|
+[00:02:17:504]|[07-06-2020]|[CPUMonitoring]|[SEVERE]|[132]: Remaining Threads cpu usage is 0|
+[14:16:57:218]|[08-04-2020]|[CPUMonitoring]|[SEVERE]|[110]: Total No. of Threads:  142|
+[14:16:57:230]|[08-04-2020]|[CPUMonitoring]|[SEVERE]|[110]: Remaining Threads cpu usage is 0|
+[18:20:54:349]|[08-20-2020]|[CPUMonitoring]|[SEVERE]|[125]: Total No. of Threads:  145|
+[18:20:54:351]|[08-20-2020]|[CPUMonitoring]|[SEVERE]|[125]: Remaining Threads cpu usage is 0|
+[15:12:27:222]|[09-11-2020]|[CPUMonitoring]|[SEVERE]|[195]: Total No. of Threads:  160|
+[15:12:27:239]|[09-11-2020]|[CPUMonitoring]|[SEVERE]|[195]: 
+Thread Info:Thread Id : 79, has CPU usage : 1
+Thread Name: /WOListView.do-1599817346497_###_https-jsse-nio-443-exec-8, Thread State: RUNNABLE
+  at org.apache.catalina.core.ContainerBase.fireContainerEvent(ContainerBase.java:1215)
+  at org.apache.catalina.session.StandardSession.setAttribute(StandardSession.java:1506)
+  at org.apache.catalina.session.StandardSession.setAttribute(StandardSession.java:1415)
+  at org.apache.catalina.session.StandardSessionFacade.setAttribute(StandardSessionFacade.java:137)
+  at com.adventnet.servicedesk.helpdesk.workorder.action.QueryLinkTransformer.setWOListToSession(QueryLinkTransformer.java:268)
+  at com.adventnet.servicedesk.helpdesk.workorder.action.QueryLinkTransformer.renderCell(QueryLinkTransformer.java:165)
+  at com.adventnet.client.components.table.web.TableIterator.initTransCtxForCurrentCell(TableIterator.java:229)
+  at com.adventnet.client.components.table.web.CellTag.doStartTag(CellTag.java:73)
+  at org.apache.jsp.mickeyclient.SDTable_jsp._jspService(SDTable_jsp.java:3178)
+  at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+  at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.mdh.MDHFilter.doFilter(MDHFilter.java:205)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+  at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:591)
+  at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:527)
+  at com.adventnet.client.view.web.ViewProcessorServlet.includeView(ViewProcessorServlet.java:102)
+  at com.manageengine.servicedesk.client.view.web.SDViewProcessorServlet.service(SDViewProcessorServlet.java:50)
+  at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.mdh.MDHFilter.doFilter(MDHFilter.java:205)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+  at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:591)
+  at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:527)
+  at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:892)
+  at org.apache.jsp.workorder.WorkOrderListView_jsp._jspService(WorkOrderListView_jsp.java:2328)
+  at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+  at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.servicedesk.filter.EncodingFilter.doFilter(EncodingFilter.java:249)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.mdh.MDHFilter.doFilter(MDHFilter.java:205)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728)
+  at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:470)
+  at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:395)
+  at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:316)
+  at org.apache.struts.chain.commands.servlet.PerformForward.handleAsForward(PerformForward.java:113)
+  at org.apache.struts.chain.commands.servlet.PerformForward.perform(PerformForward.java:96)
+  at org.apache.struts.chain.commands.AbstractPerformForward.execute(AbstractPerformForward.java:54)
+  at org.apache.struts.chain.commands.ActionCommandBase.execute(ActionCommandBase.java:51)
+  at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+  at org.apache.commons.chain.generic.LookupCommand.execute(LookupCommand.java:305)
+  at org.apache.commons.chain.impl.ChainBase.execute(ChainBase.java:191)
+  at org.apache.struts.chain.ComposableRequestProcessor.process(ComposableRequestProcessor.java:283)
+  at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1913)
+  at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:449)
+  at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+  at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.servicedesk.common.filter.ResetThreadLocal.doFilter(ResetThreadLocal.java:26)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.servicedesk.filter.EncodingFilter.doFilter(EncodingFilter.java:249)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.iam.security.SecurityFilter.doFilter(SecurityFilter.java:365)
+  at com.manageengine.servicedesk.filter.SdpSecurityFilter.doFilter(SdpSecurityFilter.java:437)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.servicedesk.filter.RememberMe.doFilter(RememberMe.java:149)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.servicedesk.authentication.NTLMV2CredentialAssociationFilter.doFilter(NTLMV2CredentialAssociationFilter.java:37)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.servicedesk.authentication.NTLMV2Filter.doFilter(NTLMV2Filter.java:201)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.filters.ParamFilter.doFilter(ParamFilter.java:30)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.adventnet.authentication.filter.AssociateCredential.doFilter(AssociateCredential.java:122)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.mdh.MDHFilter.doFilter(MDHFilter.java:205)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at com.manageengine.mdh.MDHThreadLocalFilter.doFilter(MDHThreadLocalFilter.java:40)
+  at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+  at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+  at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+  at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+  at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:610)
+  at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+  at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+  at com.adventnet.servicedesk.tools.AuthenticateNtlm.invoke(AuthenticateNtlm.java:179)
+  at org.apache.catalina.authenticator.SingleSignOn.invoke(SingleSignOn.java:291)
+  at com.manageengine.servicedesk.valves.MethodFilterValve.invoke(MethodFilterValve.java:70)
+  at org.apache.catalina.valves.StuckThreadDetectionValve.invoke(StuckThreadDetectionValve.java:206)
+  at com.manageengine.servicedesk.valves.SDPStuckThreadDetectionValve.invoke(SDPStuckThreadDetectionValve.java:57)
+  at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+  at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+  at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+  at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+  at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+  at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+  at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+  at java.lang.Thread.run(Thread.java:748)
+Is executing native code? : false
+|
+[15:12:27:240]|[09-11-2020]|[CPUMonitoring]|[SEVERE]|[195]: 
+Thread Info:Thread Id : 117, has CPU usage : 1
+Thread Name: Reports_0, Thread State: RUNNABLE
+  at java.lang.Throwable.fillInStackTrace(Native Method)
+  at java.lang.Throwable.fillInStackTrace(Throwable.java:783)
+  at java.lang.Throwable.<init>(Throwable.java:265)
+  at java.lang.Exception.<init>(Exception.java:66)
+  at java.lang.RuntimeException.<init>(RuntimeException.java:62)
+  at java.util.MissingResourceException.<init>(MissingResourceException.java:61)
+  at java.util.ResourceBundle.getObject(ResourceBundle.java:450)
+  at java.util.ResourceBundle.getObject(ResourceBundle.java:444)
+  at java.util.ResourceBundle.getString(ResourceBundle.java:407)
+  at com.adventnet.servicedesk.utils.SDResourceBundle.getString(SDResourceBundle.java:53)
+  at com.adventnet.servicedesk.reports.utils.ReportUtil.getColumnTableDetails(ReportUtil.java:1736)
+  at com.adventnet.servicedesk.reports.utils.CoreReportDesigner.setCriteria(CoreReportDesigner.java:7036)
+  at com.adventnet.servicedesk.reports.utils.CoreReportDesigner.getQuery(CoreReportDesigner.java:6051)
+  at com.adventnet.servicedesk.reports.utils.CoreReportDesigner.generateReport(CoreReportDesigner.java:4643)
+  at com.adventnet.servicedesk.reports.utils.CoreReportDesigner.generateReportCompiledJasper(CoreReportDesigner.java:4321)
+  at com.adventnet.servicedesk.report.task.ScheduledReportTask.generateReport(ScheduledReportTask.java:464)
+  at com.adventnet.servicedesk.report.task.ScheduledReportTask.executeTask(ScheduledReportTask.java:190)
+  at com.adventnet.taskengine.internal.SchedulerBean.executeTask(SchedulerBean.java:631)
+  at sun.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+  at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  at java.lang.reflect.Method.invoke(Method.java:498)
+  at com.adventnet.mfw.bean.BeanProxy.invoke(BeanProxy.java:53)
+  at com.sun.proxy.$Proxy5.executeTask(Unknown Source)
+  at com.adventnet.taskengine.internal.ScheduleExecutor.executeNextTask(ScheduleExecutor.java:163)
+  at com.adventnet.taskengine.internal.ScheduleExecutor.run(ScheduleExecutor.java:90)
+  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+  at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  at java.lang.Thread.run(Thread.java:748)
+Is executing native code? : false
+|
+[15:12:27:242]|[09-11-2020]|[CPUMonitoring]|[SEVERE]|[195]: 
+Thread Info:Thread Id : 1680, has CPU usage : 1
+Thread Name: pool-14-thread-1, Thread State: RUNNABLE
+  at org.apache.lucene.search.TermQuery$TermWeight.<init>(TermQuery.java:53)
+  at org.apache.lucene.search.TermQuery.createWeight(TermQuery.java:199)
+  at org.apache.lucene.search.BooleanQuery$BooleanWeight.<init>(BooleanQuery.java:176)
+  at org.apache.lucene.search.BooleanQuery.createWeight(BooleanQuery.java:354)
+  at org.apache.lucene.search.BooleanQuery$BooleanWeight.<init>(BooleanQuery.java:176)
+  at org.apache.lucene.search.BooleanQuery.createWeight(BooleanQuery.java:354)
+  at org.apache.lucene.search.Searcher.createNormalizedWeight(Searcher.java:168)
+  at org.apache.lucene.search.IndexSearcher.createNormalizedWeight(IndexSearcher.java:664)
+  at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:342)
+  at org.apache.lucene.search.IndexSearcher.search(IndexSearcher.java:330)
+  at com.manageengine.servicedesk.lucene.util.LuceneIndexUtil.search(LuceneIndexUtil.java:874)
+  at com.manageengine.servicedesk.lucene.util.LuceneIndexUtil.search(LuceneIndexUtil.java:787)
+  at com.adventnet.servicedesk.kbase.util.SuggestUtil.getAnnouncementIds(SuggestUtil.java:87)
+  at com.adventnet.servicedesk.kbase.util.SuggestUtil.getAnnouncementStringForAckMail(SuggestUtil.java:386)
+  at com.adventnet.servicedesk.kbase.util.SuggestUtil.getSuggestionsForAckMail(SuggestUtil.java:313)
+  at com.adventnet.servicedesk.utils.AeSdpBridgeImpl.getSuggestionsForNotification(AeSdpBridgeImpl.java:432)
+  at com.adventnet.servicedesk.notification.util.NotificationStringParser.getAppenedString(NotificationStringParser.java:2212)
+  at com.adventnet.servicedesk.notification.util.NotificationStringParser.getNotificationString(NotificationStringParser.java:191)
+  at com.adventnet.servicedesk.utils.WorkOrderUtil.notifyOnRequestSynchronous(WorkOrderUtil.java:3477)
+  at com.manageengine.servicedesk.jobexecutors.MailNotificationJobExecutor.execute(MailNotificationJobExecutor.java:119)
+  at com.manageengine.jobscheduler.JobExecutorImpl.call(JobExecutorImpl.java:97)
+  at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+  at java.lang.Thread.run(Thread.java:748)
+Is executing native code? : false
+|
+[15:12:27:242]|[09-11-2020]|[CPUMonitoring]|[SEVERE]|[195]: Remaining Threads cpu usage is 0|
+[18:22:41:473]|[09-17-2020]|[CPUMonitoring]|[SEVERE]|[133]: Total No. of Threads:  153|
+[18:22:41:481]|[09-17-2020]|[CPUMonitoring]|[SEVERE]|[133]: Remaining Threads cpu usage is 0|
+[19:26:14:732]|[10-05-2020]|[CPUMonitoring]|[SEVERE]|[126]: Total No. of Threads:  149|
+[19:26:14:733]|[10-05-2020]|[CPUMonitoring]|[SEVERE]|[126]: Remaining Threads cpu usage is 0|
+[09:09:15:272]|[10-13-2020]|[CPUMonitoring]|[SEVERE]|[183]: Total No. of Threads:  145|
+[09:09:15:274]|[10-13-2020]|[CPUMonitoring]|[SEVERE]|[183]: Remaining Threads cpu usage is 0|
+[18:11:59:428]|[11-17-2020]|[CPUMonitoring]|[SEVERE]|[145]: Total No. of Threads:  134|
+[18:11:59:434]|[11-17-2020]|[CPUMonitoring]|[SEVERE]|[145]: Remaining Threads cpu usage is 0|
+[12:17:37:274]|[12-07-2020]|[CPUMonitoring]|[SEVERE]|[138]: Total No. of Threads:  130|
+[12:17:37:275]|[12-07-2020]|[CPUMonitoring]|[SEVERE]|[138]: Remaining Threads cpu usage is 0|
+[18:27:46:727]|[12-17-2020]|[CPUMonitoring]|[SEVERE]|[130]: Total No. of Threads:  134|
+[18:27:46:732]|[12-17-2020]|[CPUMonitoring]|[SEVERE]|[130]: Remaining Threads cpu usage is 0|

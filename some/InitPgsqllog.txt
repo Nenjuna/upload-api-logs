@@ -1,0 +1,44 @@
+
+D:\Downloads>set wdir=D:\Downloads 
+
+D:\Downloads>set PRO_HOME=C:\Program Files\ManageEngine\ServiceDesk 
+
+D:\Downloads>cd /D C:\Program Files\ManageEngine\ServiceDesk\bin 
+
+C:\Program Files\ManageEngine\ServiceDesk\bin>call initPgsql.bat 
+DB Home :: C:\Program Files\ManageEngine\ServiceDesk\pgsql
+PostgreSQL Version :: postgres (PostgreSQL) 10.12
+
+** Setting up PostgreSQL Installation Directory
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 2417 files; Failed processing 0 files
+
+** Granting privileges for Data Directory
+* Resetting Permissions
+Successfully processed 987 files; Failed processing 0 files
+Successfully processed 987 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 2 files; Failed processing 0 files
+Successfully processed 2 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+Successfully processed 1 files; Failed processing 0 files
+* Securing Contents
+Successfully processed 987 files; Failed processing 0 files
+Successfully processed 2 files; Failed processing 0 files
+
+** Setting local time zone
+Time Zone :: Asia/Calcutta
+Time Zone property added successfully.
+
+** Copying Archive Script
+Archive Script copied successfully
+
+PostgreSQL DB initialized successfully.
+0

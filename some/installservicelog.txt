@@ -1,0 +1,10 @@
+
+D:\Downloads>set wdir=D:\Downloads 
+
+D:\Downloads>set PRO_HOME="C:\Program Files\ManageEngine\ServiceDesk" 
+
+D:\Downloads>cd /D "C:\Program Files\ManageEngine\ServiceDesk"\bin 
+
+C:\Program Files\ManageEngine\ServiceDesk\bin>call sd_service.bat -i 
+wrapper  | Unable to install the ManageEngine ServiceDesk Plus service - The specified service already exists. (0x431)
+1

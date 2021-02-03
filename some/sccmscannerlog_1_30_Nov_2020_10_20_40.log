@@ -1,0 +1,131 @@
+Nov 30, 2020 10:20:40 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner main
+INFO: SCCM Scheduler Started and will report to https://root.com/AgentTaskDetails
+Nov 30, 2020 10:20:40 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner main
+INFO: SCCM Scheduler Started
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner <init>
+INFO: DataBase connection successfully created
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSchedule
+INFO: Total machine scan count : 4
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSchedule
+INFO: Total iteration scan :1
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSchedule
+INFO: MachineIDs going to scan is [16777219, 16777220, 16777221, 16777222]
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSCCMScan
+INFO: Hardware Scan Started...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getComputerInfo
+INFO: ComputerInfo Scanning...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getComputerInfo
+INFO: ComputerInfo Scan Ended...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getOSInfo
+INFO: OSInfo processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getCPUInfo
+INFO: CPUInfo processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getPhysicalMemoryInfo
+INFO: Physical Memory Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getHardDiskInfo
+INFO: Harddisk Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getLogicDiskInfo
+INFO: Logical Disk Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getKeyBoardInfo
+INFO: Keyboard Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getMouseInfo
+INFO: Mouse Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getMonitorInfo
+INFO: Monitor Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getNetworkInfo
+INFO: Network Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getNICNameByMacAddress
+INFO: Exception occured in fetching NIC name
+java.sql.SQLException: Use of the executeQuery(String) method is not supported on this type of statement.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.notSupported(JtdsPreparedStatement.java:198)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:835)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNICNameByMacAddress(SCCMScanner.java:1710)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNetworkInfo(SCCMScanner.java:1627)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getHardwareInfo(SCCMScanner.java:548)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSCCMScan(SCCMScanner.java:266)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSchedule(SCCMScanner.java:244)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.main(SCCMScanner.java:2615)
+
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getNICNameByMacAddress
+INFO: Exception occured in fetching NIC name
+java.sql.SQLException: Use of the executeQuery(String) method is not supported on this type of statement.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.notSupported(JtdsPreparedStatement.java:198)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:835)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNICNameByMacAddress(SCCMScanner.java:1710)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNetworkInfo(SCCMScanner.java:1627)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getHardwareInfo(SCCMScanner.java:548)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSCCMScan(SCCMScanner.java:266)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSchedule(SCCMScanner.java:244)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.main(SCCMScanner.java:2615)
+
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getNICNameByMacAddress
+INFO: Exception occured in fetching NIC name
+java.sql.SQLException: Use of the executeQuery(String) method is not supported on this type of statement.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.notSupported(JtdsPreparedStatement.java:198)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:835)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNICNameByMacAddress(SCCMScanner.java:1710)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNetworkInfo(SCCMScanner.java:1627)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getHardwareInfo(SCCMScanner.java:548)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSCCMScan(SCCMScanner.java:266)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSchedule(SCCMScanner.java:244)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.main(SCCMScanner.java:2615)
+
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getNICNameByMacAddress
+INFO: Exception occured in fetching NIC name
+java.sql.SQLException: Use of the executeQuery(String) method is not supported on this type of statement.
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.notSupported(JtdsPreparedStatement.java:198)
+	at net.sourceforge.jtds.jdbc.JtdsPreparedStatement.executeQuery(JtdsPreparedStatement.java:835)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNICNameByMacAddress(SCCMScanner.java:1710)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getNetworkInfo(SCCMScanner.java:1627)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.getHardwareInfo(SCCMScanner.java:548)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSCCMScan(SCCMScanner.java:266)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSchedule(SCCMScanner.java:244)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.main(SCCMScanner.java:2615)
+
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getSoundCardInfo
+INFO: Sound Card Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getVideoCardInfo
+INFO: Video Card Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getSerialPortInfo
+INFO: Serial Port Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getParallelPortInfo
+INFO: Parellel Port Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getUSBInfo
+INFO: USB Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getPrinterInfo
+INFO: Printer Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getHotFixInfo
+INFO: HotFix Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getUserAccountInfo
+INFO: User Account Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSCCMScan
+INFO: Hardware Scan Ended...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSCCMScan
+INFO: Software Scan Started...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getInstalledSoftwares
+INFO: Installed Software 32 bit Info processing.....
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSCCMScan
+INFO: Software Scan Ended...
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner startSCCMScan
+INFO: Data sending process for the machines : {16777219=SDP-K8R2-1.ae-helpdesk.com, 16777220=SDP-WIN12-1.ae-helpdesk.com, 16777221=SDP-W10-1.ae-helpdesk.com, 16777222=WIN7-1882.WORKGROUP}
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner postXML
+INFO:  : Successfully scanned for SDP-K8R2-1.ae-helpdesk.com
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner postXML
+INFO:  : Successfully scanned for SDP-WIN12-1.ae-helpdesk.com
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner postXML
+INFO:  : Successfully scanned for SDP-W10-1.ae-helpdesk.com
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner postXML
+INFO:  : Successfully scanned for WIN7-1882.WORKGROUP
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner getParamList
+INFO: auditUpdate=%7B%22totalScanned%22%3A4%2C%22totalSuccess%22%3A4%2C%22totalFailed%22%3A0%2C%22wasHistoryPresent%22%3Afalse%2C%22startTime%22%3A%2230%2F11%2F2020+10%3A20%3A40%22%2C%22totalDeleted%22%3A0%2C%22endTime%22%3A%2230%2F11%2F2020+10%3A20%3A41%22%2C%22newlyAdded%22%3A0%2C%22SCCM_ID%22%3A%221%22%7D&action=update_summary&audittoken=SCCM_1_1606711837849&sccmid=1&probe=SCCMConnector
+Nov 30, 2020 10:20:41 AM com.manageengine.servicedesk.asset.sccm.SCCMScanner sendAPICall
+SEVERE: Failed to communicate with central server.
+org.json.JSONException: A JSONObject text must begin with '{' at 0 [character 1 line 1]
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:507)
+	at org.json.JSONObject.<init>(JSONObject.java:222)
+	at org.json.JSONObject.<init>(JSONObject.java:406)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.sendAPICall(SCCMScanner.java:2557)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.updateSummary(SCCMScanner.java:354)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.startSchedule(SCCMScanner.java:258)
+	at com.manageengine.servicedesk.asset.sccm.SCCMScanner.main(SCCMScanner.java:2615)
+

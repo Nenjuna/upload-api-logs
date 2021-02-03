@@ -4,18 +4,22 @@
   "description": "A upload API with Express",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "extract": "nodemon extract.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adm-zip": "^0.5.2",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
+    "gunzip-file": "^0.1.1",
     "line-reader": "^0.4.0",
     "multer": "^1.4.2",
     "n-readline": "^0.1.1",
     "n-readlines": "^1.0.1",
     "node-fetch": "^2.6.1",
+    "node-stream-zip": "^1.12.0",
     "nodemon": "^2.0.6",
     "txt-reader": "^1.4.5"
   }

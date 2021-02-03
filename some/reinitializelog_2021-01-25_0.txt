@@ -1,0 +1,113 @@
+[06:39:12:102]|[01-25-2021]|[com.zoho.conf.AppResources]|[INFO]|[1]: Properties passed has been loaded.|
+[06:39:12:161]|[01-25-2021]|[com.zoho.conf.AppResources]|[INFO]|[1]: Going to load : system_properties.conf|
+[06:39:12:161]|[01-25-2021]|[com.zoho.conf.AppResources]|[INFO]|[1]: Properties file has been loaded.|
+[06:39:12:161]|[01-25-2021]|[com.zoho.conf.AppResources]|[INFO]|[1]: Going to load : app.properties|
+[06:39:12:161]|[01-25-2021]|[com.zoho.conf.AppResources]|[INFO]|[1]: Properties file has been loaded.|
+[06:39:12:177]|[01-25-2021]|[com.adventnet.mfw.PatchUpdater]|[WARNING]|[1]: The 'fixes' directory is missing. Product loads the jar(s) without PATCH|
+[06:39:12:177]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\lib to classpath|
+[06:39:12:193]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\lib/webremote to classpath|
+[06:39:12:193]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\lib/tomcat to classpath|
+[06:39:12:193]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\lib/resources to classpath|
+[06:39:12:193]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\integration/lib to classpath|
+[06:39:12:193]|[01-25-2021]|[com.adventnet.mfw.Starter]|[INFO]|[1]: Going to add jars from Directory : D:\SDP\ManageEngine\ServiceDesk\bin\\..\zreports/uploadtool/lib to classpath|
+[06:39:12:208]|[01-25-2021]|[com.zoho.mickey.startup.MEServer]|[INFO]|[1]: Creating new Server instance|
+[06:39:12:208]|[01-25-2021]|[com.zoho.net.handshake.HandShakeUtil]|[INFO]|[1]: server listening port:: 49158|
+[06:39:12:224]|[01-25-2021]|[com.zoho.net.handshake.HandShakeClient]|[INFO]|[1]: Connection established!!!|
+[06:39:12:224]|[01-25-2021]|[com.zoho.net.handshake.HandShakeClient]|[INFO]|[1]: Sending message :: PING|
+[06:39:12:239]|[01-25-2021]|[com.zoho.net.handshake.HandShakeClient]|[INFO]|[1]: Sending message to HandShakeServer|
+[06:39:22:259]|[01-25-2021]|[com.zoho.net.handshake.HandShakeUtil]|[WARNING]|[1]: Exception while get PING status, hence returning false. Exception while receiving message from HandShakeServer!!!|
+[06:39:22:259]|[01-25-2021]|[com.zoho.net.handshake.HandShakeUtil]|[INFO]|[1]: is HandShakeServer running :: false|
+[06:39:22:290]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing all product-config files|
+[06:39:22:290]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\product-config.xml|
+[06:39:22:297]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\customer-config.xml|
+[06:39:22:312]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing all product-config files|
+[06:39:22:312]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\product-config.xml|
+[06:39:22:312]|[01-25-2021]|[com.adventnet.persistence.ConfigurationParser]|[INFO]|[1]: Processing D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\customer-config.xml|
+[06:39:23:146]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Reading D:\SDP\ManageEngine\ServiceDesk\bin\\..\conf\database_params.conf |
+[06:39:23:146]|[01-25-2021]|[com.adventnet.persistence.util.DCManager]|[INFO]|[1]: All valid properties are available for dctype :: defaultdc, database :: postgres|
+[06:39:23:146]|[01-25-2021]|[com.adventnet.persistence.util.DCManager]|[INFO]|[1]: dc-types defined in dynamic-column-types.props :: [defaultdc]|
+[06:39:23:146]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Loading UDTs from directory :: D:\SDP\ManageEngine\ServiceDesk\bin\\..\conf\udt|
+[06:39:23:193]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: AGE|
+[06:39:23:193]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: CURRENCY|
+[06:39:23:199]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: CURRENCYSYMBOL|
+[06:39:23:199]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: DAYS|
+[06:39:23:199]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: GENDER|
+[06:39:23:199]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: HONORIFIC|
+[06:39:24:296]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: JSONSTRING|
+[06:39:24:296]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: LENGTH|
+[06:39:24:296]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: MONTHS|
+[06:39:24:302]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: SERIAL|
+[06:39:24:302]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: UUID|
+[06:39:24:302]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[INFO]|[1]: Loaded data type :: WEIGHT|
+[06:39:24:302]|[01-25-2021]|[com.adventnet.db.persistence.metadata.DataTypeManager]|[SEVERE]|[1]: DataTypes initialized from :: D:\SDP\ManageEngine\ServiceDesk\bin\\..\conf\udt|
+[06:39:24:302]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Reading D:\SDP\ManageEngine\ServiceDesk\bin\\..\conf\database_params.conf |
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Driver Name :: com.microsoft.sqlserver.jdbc.SQLServerDriver|
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Connection URL :: jdbc:sqlserver://localhost:1433;DatabaseName=sdp;charset=utf-8;Tds=8.0;PrepareSql=3;XaEmulation=false;loginTimeout=5;socketTimeout=1200000|
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Username :: sa|
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Min Size :: 5|
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Max Size :: 40|
+[06:39:24:443]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Transaction Isolation :: TRANSACTION_READ_COMMITTED|
+[06:39:25:210]|[01-25-2021]|[com.zoho.cp.ConnectionCreator]|[INFO]|[1]: Socket Factory className--null|
+[06:39:26:901]|[01-25-2021]|[com.adventnet.ds.DefaultDataSourcePlugIn]|[INFO]|[1]: DataSourcecom.zoho.cp.TxDataSource@6ac13091|
+[06:39:26:901]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Archive Adapter class ::: com.adventnet.db.archive.DefaultArchiveAdapter|
+[06:39:26:901]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Storage Adapter class ::: null|
+[06:39:26:911]|[01-25-2021]|[com.adventnet.db.api.RelationalAPI]|[SEVERE]|[1]: haltjvm.on.dbcrash is set to [true]|
+[06:39:26:911]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: shutDownStrings :: []|
+[06:39:26:911]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: Loading the function patterns from the file :: [D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\Helpdesk\custom_mssql_functionpatterns.txt]|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: Loading the function patterns from the file :: [D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\Persistence\mssql_functionpatterns.txt]|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: isDBMigration running :: false|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: isDBMigration dest DB :: false|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: DataSourcePlugIn is initialized successfully|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: create.db is :: null|
+[06:39:26:921]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Template replaced url :: jdbc:sqlserver://localhost:1433;DatabaseName=sdp;charset=utf-8;Tds=8.0;PrepareSql=3;XaEmulation=false;loginTimeout=5;socketTimeout=1200000|
+[06:39:27:538]|[01-25-2021]|[com.manageengine.db.adapter.mssql.SDMssqlDBAdapter]|[INFO]|[1]:  Inside sql version validate method ####|
+[06:39:27:592]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: Incoming collation string is SQL_Latin1_General_CP1_CI_AS|
+[06:39:27:608]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: Collation String constructed is SQL_Latin1_General_CP1_CS_A%|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: The Toggle collation string is SQL_Latin1_General_CP1_CS_AS|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlUuidDTAdapter]|[INFO]|[1]: Mssql version : 15.00.4083|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlUuidDTAdapter]|[INFO]|[1]: This version of Mysql :: 15.00.4083 is supported for UUID|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.db.adapter.AbstractRestoreHandler]|[INFO]|[1]: Restore process fully completed.|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.db.adapter.Jdbc20DBAdapter]|[INFO]|[1]: splitConnectionURL :: {charset=utf-8, Tds=8.0, Server=localhost, Port=1433, DatabaseName=sdp, urlWithoutProps=jdbc:sqlserver://localhost:1433, jdbcurl_props_separator=;, url_props_delimiter=;, socketTimeout=1200000, XaEmulation=false, urlProps={Tds=8.0, XaEmulation=false, PrepareSql=3, DatabaseName=sdp, loginTimeout=5, socketTimeout=1200000, charset=utf-8}, DBName=sdp, loginTimeout=5, properties={charset=utf-8, DatabaseName=sdp, DBName=sdp, socketTimeout=1200000, PrepareSql=3, XaEmulation=false, Tds=8.0, Port=1433, Server=localhost, loginTimeout=5}, PrepareSql=3}|
+[06:39:27:623]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Template replaced url :: jdbc:sqlserver://localhost:1433;DatabaseName=sdp;charset=utf-8;Tds=8.0;PrepareSql=3;XaEmulation=false;loginTimeout=5;socketTimeout=1200000|
+[06:39:27:654]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: Master Key is already Created|
+[06:39:27:716]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: DB Version      :: 15.0|
+[06:39:27:716]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: DB Architecture :: 64|
+[06:39:27:716]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: There are 2 files. [Log file : D:\sdp_log.ldf,  Data file : D:\sdp.mdf,  ]|
+[06:39:27:723]|[01-25-2021]|[com.adventnet.persistence.xml.DynamicValueHandlerRepositry]|[INFO]|[1]: Going to load DVH :: jar:file:/D:/SDP/ManageEngine/ServiceDesk/lib/AdvPersistence.jar!/com/adventnet/db/persistence/metadata/conf/dynamic-value-handlers.xml|
+[06:39:27:903]|[01-25-2021]|[com.adventnet.db.persistence.metadata.MetaDataEntityResolver]|[INFO]|[1]: Entered resolveEntity2 :: systemId :: [data-dictionary.dtd], publicId :: [null], name :: [[dtd]], baseURI :: [null]|
+[06:39:27:927]|[01-25-2021]|[com.adventnet.db.persistence.metadata.parser.DataDictionaryParser]|[INFO]|[1]: Parsing the File :: file:/D:/SDP/ManageEngine/ServiceDesk/lib/AdvPersistence.jar!/com/adventnet/db/persistence/metadata/conf/meta-dd.xml|
+[06:39:28:479]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Persistence|
+[06:39:28:479]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: persURL :: jar:file:/D:/SDP/ManageEngine/ServiceDesk/lib/AdvPersistence.jar!/com/adventnet/db/persistence/metadata/conf/personality-configuration.xml|
+[06:39:28:503]|[01-25-2021]|[com.adventnet.persistence.xml.XmlParser]|[INFO]|[1]: Going to parse the XML :: [jar:file:/D:/SDP/ManageEngine/ServiceDesk/lib/AdvPersistence.jar!/com/adventnet/db/persistence/metadata/conf/personality-configuration.xml]|
+[06:39:28:519]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: No Preprocessor found.|
+[06:39:28:519]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: Going to loadErrorCodes :: [D:\SDP\ManageEngine\ServiceDesk\bin\..\conf\Persistence\error-codes.xml]|
+[06:39:28:527]|[01-25-2021]|[com.adventnet.persistence.xml.XmlParser]|[INFO]|[1]: Going to parse the XML :: [file:/D:/SDP/ManageEngine/ServiceDesk/bin/../conf/Persistence/error-codes.xml]|
+[06:39:28:543]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[SEVERE]|[1]: Already an errorcode [1,217] has been defined, hence over-writing it|
+[06:39:28:543]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[SEVERE]|[1]: Already an errorcode [1,451] has been defined, hence over-writing it|
+[06:39:28:543]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[SEVERE]|[1]: Already an errorcode [547] has been defined, hence over-writing it|
+[06:39:28:543]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: ErrorCodes :: {OracleErrorCode={}, MySQLErrorCode={1216=1015 - ER_NO_REFERENCED_ROW, 1217=1016 - ER_ROW_IS_REFERENCED, 1058=1008 - ER_WRONG_VALUE_COUNT, 1062=1001 - ER_DUP_ENTRY, 1063=1010 - ER_WRONG_FIELD_SPEC, 1097=1014 - ER_TOO_BIG_SET, 1291=1003 - ER_DUPLICATED_VALUE_IN_TYPE, 1067=1012 - ER_INVALID_DEFAULT, 1451=1016 - ER_ROW_IS_REFERENCED, 1452=1015 - ER_NO_REFERENCED_ROW, 1166=1011 - ER_WRONG_COLUMN_NAME, 1230=1013 - ER_NO_DEFAULT, 1263=1006 - ER_WARN_NULL_TO_NOTNULL, 1231=1017 - ER_WRONG_VALUE_FOR_VAR, 1264=1018 - ER_WARN_DATA_OUT_OF_RANGE, 1232=1019 - ER_WRONG_TYPE_FOR_VAR, 1138=1005 - ER_INVALID_USE_OF_NULL, 1171=1007 - ER_PRIMARY_CANT_HAVE_NULL, 1140=1032 - ER_MIX_OF_GROUP_FUNC_AND_FIELDS, 1205=1024 - ER_LOCK_WAIT_TIMEOUT, 1206=1025 - ER_LOCK_TABLE_FULL, 1111=1031 - ER_INVALID_GROUP_FUNC_USE, 1048=1004 - ER_BAD_NULL_ERROR, 1213=1027 - ER_LOCK_DEADLOCK}, PgSQLErrorCode={23505=1001 - ER_DUP_ENTRY, 42703=1011 - ER_WRONG_COLUMN_NAME, 22001=1018 - ER_WARN_DATA_OUT_OF_RANGE, 22P02=1017 - ER_WRONG_VALUE_FOR_VAR, 22003=1014 - ER_TOO_BIG_SET, 42601=1008 - ER_WRONG_VALUE_COUNT, 23502=1004 - ER_BAD_NULL_ERROR, 23503=1015 - ER_NO_REFERENCED_ROW}, AdventNetErrorCode={1024=1024 - ER_LOCK_WAIT_TIMEOUT, 1025=1025 - ER_LOCK_TABLE_FULL, 1027=1027 - ER_LOCK_DEADLOCK, 1031=1031 - ER_INVALID_GROUP_FUNC_USE, 1032=1032 - ER_MIX_OF_GROUP_FUNC_AND_FIELDS, 1001=1001 - ER_DUP_ENTRY, 1003=1003 - ER_DUPLICATED_VALUE_IN_TYPE, 1004=1004 - ER_BAD_NULL_ERROR, 1005=1005 - ER_INVALID_USE_OF_NULL, 1006=1006 - ER_WARN_NULL_TO_NOTNULL, 1007=1007 - ER_PRIMARY_CANT_HAVE_NULL, 1008=1008 - ER_WRONG_VALUE_COUNT, 1010=1010 - ER_WRONG_FIELD_SPEC, 1011=1011 - ER_WRONG_COLUMN_NAME, 1012=1012 - ER_INVALID_DEFAULT, 1013=1013 - ER_NO_DEFAULT, 1014=1014 - ER_TOO_BIG_SET, 1015=1015 - ER_NO_REFERENCED_ROW, 1016=1016 - ER_ROW_IS_REFERENCED, 1017=1017 - ER_WRONG_VALUE_FOR_VAR, 1018=1018 - ER_WARN_DATA_OUT_OF_RANGE, 1019=1019 - ER_WRONG_TYPE_FOR_VAR}, MsSQLErrorCode={8114=1017 - ER_WRONG_VALUE_FOR_VAR, 2627=1001 - ER_DUP_ENTRY, 515=1004 - ER_BAD_NULL_ERROR, 8115=1014 - ER_TOO_BIG_SET, 547=1016 - ER_ROW_IS_REFERENCED, 8152=1018 - ER_WARN_DATA_OUT_OF_RANGE, 2601=1001 - ER_DUP_ENTRY, 109=1008 - ER_WRONG_VALUE_COUNT, 110=1008 - ER_WRONG_VALUE_COUNT, 207=1011 - ER_WRONG_COLUMN_NAME}}|
+[06:39:28:659]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Audit|
+[06:39:28:861]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Authentication|
+[06:39:28:961]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Authorization|
+[06:39:29:055]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: CustomView|
+[06:39:29:155]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: TaskEngine|
+[06:39:29:278]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: ClientFramework|
+[06:39:29:459]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: ClientComponents|
+[06:39:30:966]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Asset|
+[06:39:31:229]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: CMDB|
+[06:39:32:670]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: Helpdesk|
+[06:39:32:770]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: HelpDeskDynamic|
+[06:39:32:848]|[01-25-2021]|[com.adventnet.persistence.PersistenceInitializer]|[INFO]|[1]: loaded the module dd :: ServiceDesk_Client|
+[06:39:43:761]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:761]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: SQLState :: [S0002], Error Code:: [208]|
+[06:39:43:761]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:777]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:777]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: SQLState :: [S0002], Error Code:: [208]|
+[06:39:43:777]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:861]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlDBAdapter]|[INFO]|[1]: indexNames :: [TableDetails_PK, TableDetails_UK0, IDX_871408463, TableDetails_IDX1] for the table :: [TableDetails]|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: SQLState :: [S0002], Error Code:: [208]|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.mssql.MssqlExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: SQLState :: [S0002], Error Code:: [208]|
+[06:39:43:893]|[01-25-2021]|[com.adventnet.db.adapter.BaseExceptionSorter]|[SEVERE]|[1]: Returning [true] from isDBAlive method|
